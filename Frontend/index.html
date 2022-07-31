@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NFT Warranty</title>
+  </head>
+  <body>
+    <div id="createCollection">
+      <h4>Create Collection</h4>
+      <input
+        type="text"
+        id="collectionName"
+        required
+        placeholder="Collection Name"
+      />
+      <input
+        type="text"
+        id="collectionSymbol"
+        required
+        placeholder="Collection Symbol"
+      />
+      <button id="btnCreateCollection">Create Collection</button>
+    </div>
+
+    <div id="createNFT">
+      <h4>Mint NFT</h4>
+      <input
+        type="text"
+        id="collectionAddress"
+        required
+        placeholder="Collection Address"
+      />
+      <input
+        type="text"
+        id="ownerAddress"
+        required
+        placeholder="Recipient Address"
+      />
+      <input type="text" id="productID" required placeholder="Product Id" />
+      <input type="text" id="productName" required placeholder="Product Name" />
+      <input type="text" id="buyingDate" required placeholder="Buying Date" />
+      <input
+        type="number"
+        id="warrantyPeriod"
+        required
+        placeholder="Warranty Period"
+      />
+      <input type="text" id="moreDetails" required placeholder="More Details" />
+
+      <button id="btnCreateItem">Mint NFT</button>
+    </div>
+
+    <div id="regComplaint">
+      <h4>Register Complaint</h4>
+      <input
+        type="text"
+        id="regCollectionAddress"
+        required
+        placeholder="Collection Address"
+      />
+      <input type="number" id="regTokenId" required placeholder="Token Id" />
+      <input
+        type="text"
+        id="regDescription"
+        required
+        placeholder="More Details"
+      />
+
+      <button id="btnRegComplaint">Register</button>
+    </div>
+
+    <div id="updateComplaint">
+      <h4>Update Complaint Status</h4>
+      <input
+        type="text"
+        id="updateCollectionAddress"
+        required
+        placeholder="Collection Address"
+      />
+      <input
+        type="number"
+        id="updateComplaintId"
+        required
+        placeholder="Complaint Id"
+      />
+      <input type="number" id="updateStatus" required placeholder="Status" />
+
+      <button id="btnUpdateComplaint">Update</button>
+    </div>
+
+    <div id="transferNFT">
+      <h4>Transfer NFT</h4>
+      <input
+        type="text"
+        id="transferCollectionAddress"
+        required
+        placeholder="Collection Address"
+      />
+      <input
+        type="text"
+        id="recieverAddress"
+        required
+        placeholder="Recipient Address"
+      />
+      <input
+        type="number"
+        id="transferTokenId"
+        required
+        placeholder="Token Id"
+      />
+
+      <button id="btnTransferNFT">Transfer</button>
+    </div>
+
+    <div id="complaintStatus">
+      <h4>View Complaint Status</h4>
+      <input
+        type="text"
+        id="statusCollectionAddress"
+        required
+        placeholder="Collection Address"
+      />
+      <input
+        type="number"
+        id="statusComplaintId"
+        required
+        placeholder="Complaint Id"
+      />
+
+      <button id="btnViewComplaint">View</button>
+    </div>
+
+    <div id="viewWarranty">
+      <h4>View Warranty Left</h4>
+      <input
+        type="text"
+        id="warrantyCollectionAddress"
+        required
+        placeholder="Collection Address"
+      />
+      <input
+        type="number"
+        id="warrantyTokenId"
+        required
+        placeholder="Token Id"
+      />
+
+      <button id="btnViewWarranty">View</button>
+    </div>
+
+    <div id="viewOwner">
+      <h4>View NFT Owner</h4>
+      <input
+        type="text"
+        id="ownerCollectionAddress"
+        required
+        placeholder="Collection Address"
+      />
+      <input type="number" id="ownerTokenId" required placeholder="Token Id" />
+
+      <button id="btnViewOwner">View</button>
+    </div>
+
+    <div id="getTokenURI">
+      <h4>Get TokenURI</h4>
+      <input type="number" id="tokenId" required placeholder="Token Id" />
+
+      <button id="btnGetTokenURI">Get TokenURI</button>
+    </div>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script> -->
+    <script src="main.js"></script>
+  </body>
+</html>
